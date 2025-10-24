@@ -1166,15 +1166,6 @@ There are also advance way to use the pointer, but for the time being, master th
 <details>
 <summary><b>Chapter 12 - Object-Oriented Programming (Class and Structure)</b></summary>
 
-Explore how classes, objects, and structures form the backbone of modern C++ programming.
-
-</details>
-
----
-
-<details>
-<summary><b>Chapter 13 - Cheatsheet</b></summary>
-
 Object-Oriented Programming (OOP) is a way of structuring your code by grouping **data** and **functions** together into reusable units called **classes**.  
 
 A **class** is like a blueprint, and an **object** is an actual thing built from that blueprint.
@@ -1279,10 +1270,19 @@ int main() {
 
 Example Output:
 
-'''
+```
 Robot activated!        // Printing Messages Automatically once class created
 Robot shutting down...  // Printing Messages Automatically once class destroyed
 ```
+
+</details>
+
+---
+
+<details>
+<summary><b>Chapter 13 - Cheatsheet</b></summary>
+
+
 </details>
 
 ---
