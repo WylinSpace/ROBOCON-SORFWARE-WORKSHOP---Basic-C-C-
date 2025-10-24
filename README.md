@@ -5,8 +5,15 @@ This repository contains the source code and documentation for the ROBOCON Works
 
 ---
 
+## ✍️ Author
+This repository was fully prepared and constructed by **WEN HAO**, under the usage of **Robocon USM Recruitment Academic Session 2025/2026**.  
+You may only use it for reference and learning purposes.
+
+---
+
 ## 📚 Contents
-The repository is organized into chapters, each covering a specific topic in C/C++ programming. Click a chapter title below to expand its contents.
+The repository is organized into chapters, each covering a specific topic in C/C++ programming.  
+Click a chapter title below to expand its contents.
 
 - [Introduction to C / C++](#chapter-0---introduction-to-cc)
 - [Structure of Program](#chapter-1---structure-of-program)
@@ -23,6 +30,10 @@ The repository is organized into chapters, each covering a specific topic in C/C
 - [Object-Oriented Programming (Class and Structure)](#chapter-12---object-oriented-programming-class-and-structure)
 - [Cheatsheet](#chapter-13---cheatsheet)
 - [End...?](#chapter-14---end)
+
+---
+
+## Manuals
 
 ---
 
@@ -61,6 +72,7 @@ This chapter introduces the C and C++ programming languages, explaining syntax, 
 - Replit.com
 - OnlineGDB.com (WE ARE GOING TO USE IT TODAY!)
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -95,6 +107,7 @@ int main() {
 
 In a typical C / C++ file, several library will be used, but for the context of today, we will only focuses on <iostream> only!
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -150,6 +163,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -266,6 +280,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -471,6 +486,7 @@ int main() {
 ```
 
 ---
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -651,6 +667,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -730,6 +747,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -834,6 +852,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -917,6 +936,7 @@ while(1){
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1021,6 +1041,7 @@ int main() {
 
 ---
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1108,6 +1129,7 @@ void sayHello() {     // Function definition
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1160,6 +1182,7 @@ Value at address (*ptr): 42
 
 There are also advance way to use the pointer, but for the time being, master this will helps you enough.
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1276,6 +1299,7 @@ Robot activated!        // Printing Messages Automatically once class created
 Robot shutting down...  // Printing Messages Automatically once class destroyed
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1436,6 +1460,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1460,6 +1485,7 @@ If you had followed through all of this, you are a BETTER C++ PROGRAMMER than ME
 
 You can always visit [this link](https://roadmap.sh/cpp) for a more detailed guidelines!
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
@@ -1706,6 +1732,7 @@ int main() {
 }
 ```
 
+[🔝 Back to Top](#manuals)
 </details>
 
 ---
