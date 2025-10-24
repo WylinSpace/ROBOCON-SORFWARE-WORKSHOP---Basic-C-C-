@@ -1001,15 +1001,21 @@ A quick summary of syntax and common commands for quick reference during the wor
 
 Congratulations on finishing the workshop! 🎉 Continue exploring robotics and programming with confidence.
 
+If you ever feel lost, refer this Roadmap to guide you!
+
+Roadmaps
+![Alt text](Roadmap.jpg)
+
 </details>
 
-### challenge!
+---
+
+<details>
+<summary><b>Special Content - Hands On Projects</b></summary>
 
 You can open the website and run the following code:
 
-```
 [Click Me To The Compiler](https://www.onlinegdb.com/)
-```
 
 ```cpp
 //g++ -o snake snake.cpp -lncursesw
@@ -1245,4 +1251,7 @@ int main() {
     return 0;
 }
 ```
+
+</details>
+
 ---
