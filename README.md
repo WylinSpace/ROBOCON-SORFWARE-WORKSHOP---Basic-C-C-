@@ -1458,6 +1458,8 @@ If you had followed through all of this, you are a BETTER C++ PROGRAMMER than ME
 
 ![Alt text](/resources/Roadmap.jpg)
 
+You can always visit [this link](https://roadmap.sh/cpp) for a more detailed guidelines!
+
 </details>
 
 ---
