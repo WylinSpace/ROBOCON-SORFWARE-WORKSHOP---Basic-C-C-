@@ -30,6 +30,36 @@ The repository is organized into chapters, each covering a specific topic in C/C
 
 This chapter introduces the C and C++ programming languages, explaining syntax, and where they are used in robotics.
 
+**Why Learn C++:**
+1. Foundation of many modern languages
+- C / C++ is in everything!
+- C#, Java, Python, and more are influenced by C++!
+
+2. Teaches Logical and Structured Thinking
+- C / C++ is strict with syntax, if you had familliar with C / C++, learning other languages is VERY EASY!
+- Programming language have many, but logical thinking within is ALL THE SAME!
+
+3. Used in Embedded System, AI Performances Modules, Backend of Games
+- Arduino, STM32, and other microcontrollers use C/C++.
+- Robot Operating System (ROS) relies heavily on C++.
+- Even AI hardware like Raspberry Pi AI HATs are built on C++ backbones.
+- Master C++ make you advance than others in University!
+
+**Tools for Programming:**
+1. Integrated Development Environment (IDE)
+- VS Code – Lightweight, supports many languages with extensions.
+- Eclipse – Commonly used for Java, but supports C/C++ too.
+- IntelliJ IDEA – Professional IDE, powerful but heavier.
+
+2. Exclusive Programming Tools for C++/C
+- CodeBlocks - Beginner-friendly and easy to set up.
+- Dev-C++ - Simple, old but lightweight.
+
+3. Online Compiler
+- Programiz.com
+- Replit.com
+- OnlineGDB.com (WE ARE GOING TO USE IT TODAY!)
+
 </details>
 
 ---
@@ -575,6 +605,7 @@ The output should be:
 7 8 
 --- Layer 1 ---
 ```
+
 Higher Dimensions (4D and Beyond) exist too (Theoritically you can put infinitly layer of boxes into one box <3)
 
 But in real projects, it’s uncommon and hard to manage.
@@ -582,6 +613,7 @@ But in real projects, it’s uncommon and hard to manage.
 For larger data, we typically use structs, vectors, or classes instead(OOP). 
 
 Example declaration of a 4D Array:
+
 ```cpp
 int data4D[2][2][2][2];
 ```
@@ -591,6 +623,7 @@ int data4D[2][2][2][2];
 There are two common ways to handle strings in C++:
 
 1. C-Style String (Because C have no string in Nature, only workable alternative)
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -603,6 +636,7 @@ int main() {
 ```
 
 2. C++ String (Safer and Easier)
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -615,6 +649,7 @@ int main() {
     return 0;
 }
 ```
+
 </details>
 
 ---
@@ -693,6 +728,7 @@ int main() {
     return 0;
 }
 ```
+
 </details>
 
 ---
@@ -718,6 +754,7 @@ The result is always **true (1)** or **false (0)**.
 | `<=` | `a <= b` | Less than or equal to |
 
 Example:
+
 ```cpp
 int a = 5, b = 10;
 cout << (a < b) << endl;  // prints 1 (true)
@@ -757,6 +794,7 @@ int main() {
     return 0;
 }
 ```
+
 The condition in bracket () must only equal to either true or false.
 
 There are also a shorthand method of writing this:
@@ -808,6 +846,7 @@ There are three type of loops in C / C++:
 - `for-loop`
 
 The structure of the `while-loop`:
+
 ```cpp
 #include <iostream>
 
@@ -823,7 +862,6 @@ int main() {
 
 The structure of the `do-while-loop`:
 
-```cpp
 ```cpp
 #include <iostream>
 
@@ -883,7 +921,111 @@ while(1){
 ---
 
 <details>
-<summary><b>Chapter 9 - Functions</b></summary>
+<summary><b>Chapter 9 - Switch Function</b></summary>
+
+Sometimes you’ll have **many conditions** to check — using too many `if-else` statements can make your code messy.  
+This is where `switch-case` comes in handy!
+
+It allows you to **compare one variable against multiple constant values** in a clean way.
+
+Basic form of Switch Function will look like this:
+
+```cpp
+switch (variable) {
+    case value1:
+        // Code to run if variable == value1
+        break;
+
+    case value2:
+        // Code to run if variable == value2
+        break;
+
+    default:
+        // Code to run if no case matches
+        break;
+}
+```
+
+Each `case` must end with a `break`; statement to prevent “fall-through.”
+
+`default` is optional — it runs when none of the cases match.
+
+An excellent example of switch case is Translate the Number of Day in Week to the Day;
+
+Eg: 2 -> Tuesday
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day;
+    cout << "Enter a number (1-7): ";
+    cin >> day;
+
+    switch (day) {
+        case 1:
+            cout << "Monday" << endl;
+            break;
+        case 2:
+            cout << "Tuesday" << endl;
+            break;
+        case 3:
+            cout << "Wednesday" << endl;
+            break;
+        case 4:
+            cout << "Thursday" << endl;
+            break;
+        case 5:
+            cout << "Friday" << endl;
+            break;
+        case 6:
+            cout << "Saturday" << endl;
+            break;
+        case 7:
+            cout << "Sunday" << endl;
+            break;
+        default:
+            cout << "Invalid input! Please enter 1–7." << endl;
+            break;
+    }
+
+    return 0;
+}
+```
+
+switch only works with integer, character, or enum types, not floating-point or strings.
+
+When multiple cases share the same output, you can group them:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    switch (grade) {
+        case 'A':
+        case 'B':
+            cout << "Good job!" << endl;
+            break;
+        case 'C':
+            cout << "You passed." << endl;
+            break;
+        default:
+            cout << "Try again!" << endl;
+            break;
+    }
+}
+```
+
+---
+
+</details>
+
+---
+
+<details>
+<summary><b>Chapter 10 - Functions</b></summary>
 
 Functions are **reusable blocks of code** that perform a specific task.  
 Instead of writing the same code multiple times, you can **define a function once** and call it whenever needed.
@@ -970,16 +1112,59 @@ void sayHello() {     // Function definition
 ---
 
 <details>
-<summary><b>Chapter 10 - Pointers and Address</b></summary>
+<summary><b>Chapter 11 - Pointers and Address</b></summary>
 
-Learn how pointers work, how to use `&` and `*`, and why they are important in robotics programming.
+A **pointer** is a variable that stores the **memory address** of another variable.  
+Think of it like a *GPS coordinate* that tells you **where** a value lives in memory instead of storing the value itself.
+
+Analogy: House and People
+
+Imagine:
+- `int A = 10;` → A person named **A** lives in a house storing the number `10`.  
+- `&A` → The **address** of the house.  
+- `int *ptr = &A;` → A **pointer** named `ptr` holds the address of A’s house.  
+- `*ptr` → “Who lives inside the house?” → It gives you the **value** stored at that address (Or we called it dereference!).
+
+| **Symbol** | **Meaning** | **Example** |
+|-------------|-------------|--------------|
+| `&` | “Address of” operator | `&a` gives memory address of `a` |
+| `*` | “Value at” (dereference) operator | `*p` gives value stored at the address in `p` |
+| `int *` | Data Type for address (Remember a `int *` usually means an address for a integer) | We declared `int *pA = &A` usually to get the address. Refer the example below |
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A = 42;          // A normal variable
+    int *ptr = &A;       // Pointer to A
+
+    cout << "Value of A: " << A << endl;
+    cout << "Address of A (&A): " << &A << endl;
+    cout << "Pointer ptr (stores address): " << ptr << endl;
+    cout << "Value at address (*ptr): " << *ptr << endl;
+
+    return 0;
+}
+```
+
+Based on the example above, then the output should be:
+
+```perl
+Value of A: 42
+Address of A (&A): 0x7ffee7a3
+Pointer ptr (stores address): 0x7ffee7a3
+Value at address (*ptr): 42
+```
+
+There are also advance way to use the pointer, but for the time being, master this will helps you enough.
 
 </details>
 
 ---
 
 <details>
-<summary><b>Chapter 11 - Object-Oriented Programming (Class and Structure)</b></summary>
+<summary><b>Chapter 12 - Object-Oriented Programming (Class and Structure)</b></summary>
 
 Explore how classes, objects, and structures form the backbone of modern C++ programming.
 
@@ -988,22 +1173,136 @@ Explore how classes, objects, and structures form the backbone of modern C++ pro
 ---
 
 <details>
-<summary><b>Chapter 12 - Cheatsheet</b></summary>
+<summary><b>Chapter 13 - Cheatsheet</b></summary>
 
-A quick summary of syntax and common commands for quick reference during the workshop.
+Object-Oriented Programming (OOP) is a way of structuring your code by grouping **data** and **functions** together into reusable units called **classes**.  
 
+A **class** is like a blueprint, and an **object** is an actual thing built from that blueprint.
+
+Think of a **class** as a *recipe*, and an **object** as the *cake* you bake using that recipe. 🎂
+
+Example of a Class:
+```cpp
+#include <iostream>
+using namespace std;
+
+// Define a class
+class Car {
+public:
+    string brand;
+    int year;
+
+    void start() {
+        cout << brand << " engine started!" << endl;
+    }
+};
+
+int main() {
+    Car myCar;          // Create an object
+    myCar.brand = "Toyota";
+    myCar.year = 2020;
+
+    myCar.start();      // Call a function inside the class
+    return 0;
+}
+```
+
+Example Output:
+```perl
+Toyota engine started!
+```
+
+Apart from Class, we have `struct` as well!
+
+Structures (`struct`) are similar to classes, but by default, members are public, while in classes they are private.
+
+Example of a Structure:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Student {
+    string name;
+    int age;
+};
+
+int main() {
+    Student s1;
+    s1.name = "Ali";
+    s1.age = 19;
+
+    cout << s1.name << " is " << s1.age << " years old." << endl;
+    return 0;
+}
+```
+
+Example Output:
+
+```perl
+Ali is 19 years old.
+```
+
+| Keyword  | Default Access for Members | Common Use                                     |
+| -------- | -------------------------- | ---------------------------------------------- |
+| `class`  | **private**                | When doing **OOP**, encapsulation, data hiding |
+| `struct` | **public**                 | For simple data grouping, like C-style structs |
+
+What are the differences?
+- In a `class`, members are private unless you explicitly say `public:`.
+- In a `struct`, members are public unless you explicitly say `private:`.
+
+Advance Content! (You can visit this later once you mastered!)
+
+There exist a thing called constructor and destuctor.
+
+A constructor runs automatically when an object is created.
+A destructor runs automatically when the object is destroyed.
+
+Example of uses:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Robot {
+public:
+    Robot() { cout << "Robot activated!" << endl; }    // Constructor
+    ~Robot() { cout << "Robot shutting down..." << endl; }  // Destructor
+};
+
+int main() {
+    Robot R2D2;
+    return 0;
+}
+```
+
+Example Output:
+
+'''
+Robot activated!        // Printing Messages Automatically once class created
+Robot shutting down...  // Printing Messages Automatically once class destroyed
+```
 </details>
 
 ---
 
 <details>
-<summary><b>Chapter 11 - End...?</b></summary>
+<summary><b>Chapter 14 - End...?</b></summary>
 
 Congratulations on finishing the workshop! 🎉 Continue exploring robotics and programming with confidence.
 
 If you ever feel lost, refer this Roadmap to guide you!
 
-Roadmaps
+From my experience, follow a video might help (A LOT!), so if you have time, just spend a day following a video, and experiment by your own, for sure you going to learn fast (Really really fast!)
+
+[Videos For References!](https://www.youtube.com/watch?v=P2jVybFyh3A)
+
+
+You may also refer to the roadmap below for your learning own path, as this will covered through all possible things you should know for C++.
+
+If you had followed through all of this, you are a BETTER C++ PROGRAMMER than ME by then! (REALLY AWESOME!) (Another Genius on the rise !!!)
+
 ![Alt text](Roadmap.jpg)
 
 </details>
