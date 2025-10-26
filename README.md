@@ -685,9 +685,11 @@ Both come from the `<iostream>` library and are part of the `std` namespace.
 #include <iostream>
 using namespace std;
 
+int exam-results = 42；
+
 int main() {
     cout << "Hello, Robocon!" << endl;     // prints text with newline
-    cout << "The answer is " << 42 << endl; // prints numbers and text together
+    cout << "The answer is " << exam-results << endl; // prints numbers and text together
     return 0;
 }
 ```
